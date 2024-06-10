@@ -1,0 +1,38 @@
+<div class="form-container">
+  <form [formGroup]="userForm" (ngSubmit)="addUser()">
+    <div class="form-content">
+      <div class="p-field p-float-label form-field">
+        <input pInputText id="email" formControlName="email" />
+        <label for="email">Email</label>
+      </div>
+
+      <div class="p-field p-float-label form-field">
+        <input pInputText id="password" formControlName="password" />
+        <label for="password">Password</label>
+      </div>
+
+      <div class="p-field p-float-label form-field">
+        <input pInputText id="avatar" formControlName="avatar" />
+        <label for="avatar">Avatar</label>
+      </div>
+
+      <div class="p-field p-float-label form-field">
+        <input pInputText id="name" formControlName="name" />
+        <label for="name">Name</label>
+      </div>
+
+      <div class="p-field p-float-label form-field">
+        <input pInputText id="phoneNumber" formControlName="phoneNumber" />
+        <label for="phoneNumber">Phone Number</label>
+      </div>
+
+      <div class="p-field p-float-label form-field">
+        <input pInputText id="gender" formControlName="gender" />
+        <label for="gender">Gender</label>
+      </div>
+
+      <p-button type="submit" label="Add User" [disabled]="!userForm.valid"></p-button>
+    </div>
+  </form>
+
+</div>

@@ -1,0 +1,36 @@
+
+<label for="checkinDate" class="font-bold block mb-2"> checkinDate </label>
+<p-calendar 
+    inputId="checkinDate" 
+    [showTime]="true" 
+    hourFormat="24" 
+    class="spacing-right"/>
+
+<label for="checkoutDate" class="font-bold block mb-2"> checkoutDate </label>
+<p-calendar 
+    inputId="checkoutDate" 
+    [showTime]="true" 
+    hourFormat="24" 
+    class="spacing-right"/>
+
+<label for="numberofAdults" class="font-bold block mb-2"> numberofAdults </label>
+
+<p-inputNumber 
+    inputId="numberofAdults" 
+    mode="decimal" 
+    [showButtons]="true" 
+    inputId="minmax-buttons" 
+    [min]="0" 
+    [max]="100" 
+    class="spacing-right "/>
+
+<label for="numberofChildren" class="font-bold block mb-2"> numberofChildren </label>
+
+<p-inputNumber 
+    inputId="numberofChildren" 
+    mode="decimal" 
+    [showButtons]="true" 
+    inputId="minmax-buttons" 
+    [min]="0" 
+    [max]="100" 
+    class="spacing-right"/>

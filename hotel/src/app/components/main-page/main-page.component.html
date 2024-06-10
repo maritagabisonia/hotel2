@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="login">
+<div class="card flex justify-content-center">
+<p-button (click)="showDialog()" icon="pi pi-user" label="Login" />
+<p-dialog [(visible)]="visible">
+<h4>Log in</h4>
+
+<div class="form-container">
+  <form [formGroup]="loginForm" (ngSubmit)="Login()">
+    <div class="form-content">
+      <div class="p-field p-float-label form-field">
+        <input pInputText id="email" formControlName="email" />
+        <label for="email">Email</label>
+      </div>
+
+      <div class="p-field p-float-label form-field">
+        <input pInputText id="password" formControlName="password" />
+        <label for="password">Password</label>
+      </div>
+
+      <p-button type="submit" label="Login" [disabled]="!loginForm.valid"></p-button>
+    </div>
+  </form>
+
+</div>
+
+</p-dialog>
+</div>
+
+<app-rooms></app-rooms>
+<app-search-room-type></app-search-room-type>
+
